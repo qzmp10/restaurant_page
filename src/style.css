@@ -11,11 +11,7 @@ body {
     display: grid;
 }
 
-.red {
-    color: red;
-}
-
-img {
+.glizzy {
     height: 12rem;
     width: 20rem;
 }
@@ -30,4 +26,12 @@ img {
     background-color: pink;
     width: 2rem;
     height: 2rem;
+}
+
+.tabSection {
+
+}
+
+.tab {
+
 }

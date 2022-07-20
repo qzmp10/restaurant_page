@@ -4,7 +4,19 @@ import Glizzy from './glizzy.jpg';
 let content = document.querySelector('#content');
 content.classList.add('content');
 
+let tabSection = document.createElement('div');
+tabSection.classList.add('tabSection');
+content.appendChild(tabSection);
+
+for(let i=0; i<2; i++){
+    let tab = document.createElement('div');
+    tab.classList.add('tab');
+    tabSection.appendChild(tab);
+
+}
+
 let skeletonLayout = function() {
+
 let header = document.createElement('div');
 header.classList.add('header');
 content.appendChild(header);
