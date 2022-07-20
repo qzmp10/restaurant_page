@@ -1,6 +1,8 @@
 import "./style.css";
 import Glizzy from './glizzy.jpg';
-import menuContent from './menu.js';
+
+// u have to finish the css styling
+//then figure out a way to modify the text-content & images with different .js module
 
 let content = document.querySelector('#content');
 content.classList.add('content');
@@ -19,6 +21,7 @@ for(let i=0; i<2; i++){
 let header = document.createElement('div');
 header.classList.add('header');
 content.appendChild(header);
+header.textContent = 'Welcome to Glizzy Land!';
 
 
 const glizzy = new Image();
