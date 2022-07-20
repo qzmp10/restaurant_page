@@ -1,5 +1,6 @@
 import "./style.css";
 import Glizzy from './glizzy.jpg';
+import menuContent from './menu.js';
 
 let content = document.querySelector('#content');
 content.classList.add('content');
@@ -14,8 +15,6 @@ for(let i=0; i<2; i++){
     tabSection.appendChild(tab);
 
 }
-
-let skeletonLayout = function() {
 
 let header = document.createElement('div');
 header.classList.add('header');
@@ -36,7 +35,4 @@ for(let i=0; i<2; i++) {
     subBlock.classList.add('subBlock');
     mainBlock.appendChild(subBlock)
 }
-}
-
-skeletonLayout();
 
