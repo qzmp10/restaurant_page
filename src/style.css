@@ -7,9 +7,27 @@ body {
 }
 
 .content {
+    height: 100vh;
     display: grid;
 }
 
 .red {
     color: red;
+}
+
+img {
+    height: 12rem;
+    width: 20rem;
+}
+
+.mainBlock {
+    background-color: green;
+    width: 70vw;
+    height: 40vh;
+}
+
+.subBlock {
+    background-color: pink;
+    width: 2rem;
+    height: 2rem;
 }
