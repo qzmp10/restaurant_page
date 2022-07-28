@@ -1,7 +1,8 @@
-// finished the style in this bitch and ur done
+
 import Glizzy from './glizzy.jpg';
 
-export default function menu(){ 
+//LOADS MENU PAGE & CREATES DOM ELEMENTS
+export default function menu(){  
 let content = document.querySelector('#content');
 content.classList.add('content');
 
@@ -19,7 +20,6 @@ for(let i=0; i<2; i++){
         tab.textContent = 'Menu';
     }
 }
-// added after git commit, so figure how to make it look good & commit again
 
 let header = document.createElement('div');
 header.classList.add('header');

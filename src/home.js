@@ -1,5 +1,6 @@
 import Glizzy from './glizzy.jpg';
 
+//LOADS HOME PAGE & CREATES DOM ELEMENTS
 export default function home() {
 let content = document.querySelector('#content');
 content.classList.add('content');

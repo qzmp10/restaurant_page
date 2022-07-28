@@ -11,11 +11,18 @@ let tabBtns = document.querySelectorAll('.tab');
 tabBtns.forEach(tabBtn => {
     tabBtn.addEventListener('click', ()=> {
         if(tabBtn.textContent == 'Menu') {
-            document.body.innerHTML = '';
-            menu();
+            document.body.innerHTML = ''; //CLEARS PAGE HTML
+            let content = document.createElement('div'); //RECREATE CONTENT DIV SO menu() & home() CAN ACCESS IT 
+            document.body.appendChild(content); // APPEND IT TO BODY
+            content.setAttribute('id', 'content'); //SET ITS ID
+            menu(); //LOAD MENU
         } else {
+            //SAME AS PREVIOUS 
             document.body.innerHTML = '';
-            home();
+            let content = document.createElement('div');
+            document.body.appendChild(content);
+            content.setAttribute('id', 'content');
+            home(); // LOAD HOME
         }
     });
 })
