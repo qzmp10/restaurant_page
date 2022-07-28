@@ -22,18 +22,22 @@ body {
 }
 
 .mainBlock {
-    background-color: green;
+    background-color: rgb(190, 0, 0);
     width: 70vw;
     align-self:  flex-start;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 2rem;
     justify-content: center;
 }
 
 .subBlock {
-    background-color: pink;
+    background-color: rgb(190, 0, 0);
     display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .tabSection {
@@ -66,13 +70,22 @@ body {
 
     .glizzy {
         height: 10rem;
-        width: 20rem;
+        width: 80vw;
         justify-self: center;
+        
     }
 
     .header {
         color: white;
         font-size: 2.1rem;
         justify-self: center;
+    }
+    
+    .subBlock {
+        font-size: 0.75rem;
+    }
+
+    .mainBlock {
+        width: 100vw;
     }
   }
