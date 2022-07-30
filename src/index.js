@@ -3,6 +3,7 @@ import Glizzy from './glizzy.jpg';
 import home from './home.js';
 import menu from './menu.js';
 
+//NOTE TO SELF => PUBLISH A PAGE OF THIS PROJECT ON GITHUB & CHECK IF IT WORKS WITH THE MODULES N SHIT
 
 home();
 
