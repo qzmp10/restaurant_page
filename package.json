@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/qzmp10/restaurant_page/issues"
   },
-  "homepage": "https://github.com/qzmp10/restaurant_page#readme",
+  "homepage": "https://qzmp10.github.io/restaurant_page/",
   "devDependencies": {
     "css-loader": "^6.7.1",
     "style-loader": "^3.3.1",
