@@ -1,4 +1,4 @@
-
+import home from './home.js';
 import Glizzy from './glizzy.jpg';
 
 //LOADS MENU PAGE & CREATES DOM ELEMENTS
@@ -16,8 +16,10 @@ for(let i=0; i<2; i++){
     tabSection.appendChild(tab);
     if(i==0) {
         tab.textContent = 'Home';
+        tab.classList.add('home');
     } else {
         tab.textContent = 'Menu';
+        tab.classList.add('menu');
     }
 }
 
@@ -39,4 +41,25 @@ let subBlock = document.createElement('div');
 subBlock.classList.add('subBlock');
 mainBlock.appendChild(subBlock);
 subBlock.textContent = 'Obviously, our menu is composed of the one and only legendary glizzy!';
+
+//code to switch from home to menu
+let homeBtn = document.querySelector('.home');
+let menuBtn = document.querySelector('.menu');
+
+homeBtn.addEventListener('click', ()=>{
+    document.body.innerHTML = '';
+    let content = document.createElement('div');
+    document.body.appendChild(content);
+    content.setAttribute('id', 'content');
+    home();
+})
+
+menuBtn.addEventListener('click', ()=> {
+    document.body.innerHTML = '';
+    let content = document.createElement('div');
+    document.body.appendChild(content);
+    content.setAttribute('id', 'content');
+    menu(); 
+})
+
 }
